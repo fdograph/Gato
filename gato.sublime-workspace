@@ -1,0 +1,714 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"isDefault",
+				"event.isDefaultPrevented()	jQuery"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"atta",
+				"attachment-id"
+			],
+			[
+				"is_",
+				"is_array"
+			],
+			[
+				"is_cate",
+				"is_category"
+			],
+			[
+				"tradu",
+				"traduceme"
+			],
+			[
+				"get_po",
+				"get_post"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"ma",
+				"margin-left"
+			],
+			[
+				"l",
+				"lt-ie8"
+			],
+			[
+				"importan",
+				"important-form"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"font-s",
+				"font-style"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"in",
+				"intro-paragraph"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"tex",
+				"text-transform"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"lin-",
+				"line-texture"
+			],
+			[
+				"pre",
+				"preventDefault	jsEvent"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"sim",
+				"simple-unit-thumbnail"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"ar",
+				"article	Tag"
+			],
+			[
+				"b",
+				"button	Tag"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"margn",
+				"margin-bottom"
+			],
+			[
+				"block",
+				"block-icon"
+			],
+			[
+				"paddi",
+				"padding-top"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"text-",
+				"text-transform"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"vid",
+				"visited"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"ta",
+				"table-cell"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"padi",
+				"padding-left"
+			],
+			[
+				"dropdown",
+				"dropdown-menu"
+			],
+			[
+				"u",
+				"ul	Tag"
+			],
+			[
+				"a",
+				"a	Tag"
+			],
+			[
+				"se",
+				"section	Tag"
+			],
+			[
+				"j",
+				"jQuery	jQuery"
+			],
+			[
+				"pro",
+				"prototype	jsProp"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "Package Control Messages\n========================\n\nJavaScript and jQuery API Completions:\n-------------------------------------\n\n  1.0.0\n  =================\n  \n    Using sublime plugin API to refactor package.\n  \n    * Include JavaScript api completions\n    * Include ver 1.9 jQuery api completions\n    * Include ver 2.3.2 Twitch Bootstrap Class completions\n  \n  \n  ------------------------------\n  Fork me on Github: http://github.com/Pleasurazy/Sublime-JavaScript-API-Completions\n  ------------------------------ \n",
+			"settings":
+			{
+				"buffer_size": 516,
+				"line_ending": "Windows",
+				"name": "Package Control Messages",
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "Packages/JSLint/JSLint.sublime-build",
+	"command_palette":
+	{
+		"height": 311.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"packa",
+				"Preferences: Browse Packages"
+			],
+			[
+				"sy js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"synta",
+				"Set Syntax: PHP"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"syntax php",
+				"Set Syntax: PHP"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"syntax html",
+				"Set Syntax: HTML5"
+			],
+			[
+				"sy php",
+				"Set Syntax: PHP"
+			],
+			[
+				"intall",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"syntax ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"syntax ht",
+				"Set Syntax: HTML5"
+			],
+			[
+				"html5",
+				"Set Syntax: HTML5"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/naNotebook/Dropbox/Public/pruebas/js/gatogame.js",
+		"/C/Users/naNotebook/Documents/GitHub/CDEC/wp-content/plugins/informes/metacss.css",
+		"/C/Users/naNotebook/Documents/GitHub/CDEC/wp-content/plugins/informes/meta-alt.js",
+		"/C/Users/naNotebook/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/naNotebook/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/naNotebook/Documents/GitHub/CDEC/sftp-config.json",
+		"/C/Users/naNotebook/Documents/GitHub/CDEC/wp-content/plugins/informes/pluginInformes.php",
+		"/D/Webs/CDEC/wp-content/plugins/informes/meta-alt.js",
+		"/C/Users/NaNotebook-Ida/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/D/Webs/CDEC/wp-content/plugins/informes/metajs.js",
+		"/D/Webs/CDEC/wp-content/plugins/informes/temporal.php",
+		"/D/Webs/CDEC/wp-content/plugins/informes/pluginInformes.php",
+		"/D/Webs/CDEC/sftp-config.json",
+		"/D/Webs/CDEC/wp-content/plugins/informes/metacss.css",
+		"/C/Users/NaNotebook-Ida/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/NaNotebook-Ida/AppData/Roaming/Sublime Text 2/Packages/User/PHP.sublime-settings",
+		"/C/Users/NaNotebook-Ida/AppData/Roaming/Sublime Text 2/Packages/User/SFTP.errors.log",
+		"/D/Webs/CDEC/wp-content/plugins/informes-cdecsic/informes-cdec-sic.php",
+		"/D/Webs/CDEC/wp-content/plugins/informes-cdecsic/metajs.js",
+		"/D/Webs/CDEC/wp-includes/post.php",
+		"/D/Webs/CDEC/wp-includes/taxonomy.php",
+		"/D/Webs/CDEC/wp-includes/general-template.php",
+		"/D/Webs/CDEC/wp-content/plugins/informes-cdecsic/metacss.css",
+		"/D/Webs/CDEC/wp-content/themes/cdecsictheme/functions.php",
+		"/D/Webs/CDEC/wp-content/themes/cdecsictheme/page.php",
+		"/D/Webs/CDEC/wp-content/themes/cdecsictheme/portada-sobre-cdec.php",
+		"/D/Webs/CDEC/wp-content/themes/cdecsictheme/css/style.css",
+		"/D/Webs/CDEC/wp-content/themes/cdecsictheme/header.php",
+		"/D/Webs/CDEC/wp-content/plugins/qtranslate/qtranslate_javascript.php",
+		"/D/Webs/CDEC/wp-content/themes/cdecsictheme/meta-header.php",
+		"/D/Webs/CDEC/front/contacto.html",
+		"/D/Webs/CDEC/wp-config.php",
+		"/D/Webs/CDEC/wp-content/themes/cdecsictheme/js/mainScript.js",
+		"/D/Webs/CDEC/wp-content/themes/cdecsictheme/index.php",
+		"/C/Users/NaNotebook-Ida/Desktop/acf-options-page.php",
+		"/D/Webs/CDEC/wp-content/themes/cdecsictheme/footer.php",
+		"/D/Webs/CDEC/wp-content/themes/cdecsictheme/404.php",
+		"/D/Webs/CDEC/wp-content/themes/cdecsictheme/single.php",
+		"/D/Webs/CDEC/wp-content/themes/cdecsictheme/style.css",
+		"/C/Users/NaNotebook-Ida/AppData/Roaming/Sublime Text 2/Packages/User/Git.sublime-settings",
+		"/C/Users/NaNotebook-Ida/AppData/Roaming/Sublime Text 2/Packages/Git/Git.sublime-settings",
+		"/C/Users/NaNotebook-Ida/AppData/Roaming/Sublime Text 2/Packages/SublimeGit/SublimeGit.sublime-settings",
+		"/D/Webs/CDEC/front/js/mainScript.js",
+		"/C/Users/NaNotebook-Ida/Dropbox/Public/ninjaSlider/public_html/js/ninjaSlider.js",
+		"/D/Webs/CDEC/front/busqueda-basica.html",
+		"/D/Webs/CDEC/front/informes-y-documentos.html",
+		"/D/Webs/CDEC/front/categoria.html",
+		"/D/Webs/CDEC/front/resultado-busqueda.html",
+		"/D/Webs/CDEC/front/css/style.css",
+		"/D/Webs/CDEC/front/js/libs/jquery-ui/jquery-ui.mobile.datepicker.js",
+		"/D/Webs/CDEC/front/index.html",
+		"/D/Webs/CDEC/front/js/libs/jquery-ui/css/jquery-ui.mobile.datepicker.css",
+		"/D/Webs/CDEC/front/js/libs/jquery-ui/jquery-ui-1.10.3.custom.min.js",
+		"/D/Webs/CDEC/front/imagenes/slide-test-6.jpg",
+		"/D/Webs/CDEC/front/js/libs/ninjaSlider.js",
+		"/D/Webs/CDEC/front/sobre-cdec.html",
+		"/D/Webs/CDEC/front/listas-especiales.html",
+		"/D/Webs/CDEC/front/pagina-tipo.html",
+		"/D/Webs/CDEC/front/css/oldie.css",
+		"/D/Webs/CDEC/front/js/libs/box.sizing.ie7.js",
+		"/D/Webs/CDEC/front/404.html",
+		"/D/Webs/CDEC/front/css/oldie-9.css",
+		"/D/Webs/CDEC/front/trabaja-con-nosotros.html",
+		"/D/Webs/CDEC/front/sala-de-prensa.html",
+		"/D/Webs/CDEC/front/quienes-somos.html",
+		"/D/Webs/CDEC/front/noticia-single.html",
+		"/D/Webs/CDEC/front/normas.html",
+		"/D/Webs/CDEC/front/licitaciones.html",
+		"/D/Webs/CDEC/front/ficha-single.html",
+		"/D/Webs/CDEC/front/contingencia.html",
+		"/C/Users/NaNotebook-Ida/Downloads/ninjaSlider.js",
+		"/D/Webs/CDEC/front/css/boxsizing.htc",
+		"/D/Webs/CDEC/front/js/libs/validizr.js",
+		"/C/Users/NaNotebook-Ida/Documents/GitHub/validizr/validizr.js",
+		"/D/Webs/CDEC/front/js/libs/validizr.min.js",
+		"/D/Webs/CDEC/front/js/libs/media.match.min.js",
+		"/D/Webs/CDEC/front/js/libs/jquery.sparkline.min.js",
+		"/C/Users/NaNotebook-Ida/Desktop/Highcharts-3.0.2/examples/column-basic/index.htm",
+		"/C/Users/NaNotebook-Ida/Desktop/Highcharts-3.0.2/examples/combo-dual-axes/index.htm",
+		"/C/Users/NaNotebook-Ida/Desktop/Highcharts-3.0.2/examples/bar-basic/index.htm",
+		"/D/Webs/CDEC/front/js/libs/highcharts.js",
+		"/D/Webs/CDEC/front/css/ui/blockquote-bg.svg",
+		"/D/Webs/CDEC/front/css/ui/blockquote-bg.png",
+		"/D/Webs/CDEC/front/email.html",
+		"/D/Webs/CDEC/front/newsletter.html",
+		"/C/Users/NANOTE~1/AppData/Local/Temp/Rar$DRa0.662/index.html",
+		"/C/Users/NANOTE~1/AppData/Local/Temp/Rar$DRa0.652/index.html",
+		"/C/Users/NANOTE~1/AppData/Local/Temp/Rar$DRa0.928/index.html",
+		"/D/Webs/CDEC/front/css/style.min.css",
+		"/D/Webs/CDEC/front/lightbox-template.html",
+		"/C/Users/NaNotebook-Ida/Documents/GitHub/input-beautifier/public_html/js/beautifier.js",
+		"/D/Webs/CDEC/front/js/libs/input.beautifier.min.js",
+		"/C/Users/NaNotebook-Ida/Documents/GitHub/input-beautifier/public_html/js/beautifier.min.js",
+		"/D/Webs/CDEC/front/js/libs/jquery.raf.min.js",
+		"/C/Users/NaNotebook-Ida/Documents/GitHub/jquery-requestAnimationFrame/src/jquery.requestAnimationFrame.js",
+		"/D/Webs/CDEC/front/lightbox-template",
+		"/D/Webs/CDEC/front/busqueda-basica",
+		"/D/Webs/CDEC/wp-includes/link-template.php",
+		"/D/Webs/CDEC/wp-includes/post-template.php",
+		"/D/Webs/CDEC/front/404",
+		"/C/Users/NaNotebook-Ida/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/D/Webs/CDEC/front/sftp-config.json",
+		"/C/Users/NaNotebook-Ida/Dropbox/Public/cdec/index.html",
+		"/C/Users/NaNotebook-Ida/Dropbox/Public/cdec/css/style.css",
+		"/C/Users/NaNotebook-Ida/Dropbox/Public/cdec/js/libs/ninjaSlider.js",
+		"/C/Users/NaNotebook-Ida/Dropbox/Public/cdec/js/mainScript.js",
+		"/C/Users/NaNotebook-Ida/Documents/GitHub/ninjaSlider/public_html/js/ninjaSlider.js",
+		"/C/Users/NaNotebook-Ida/Dropbox/Public/cdec/js/libs/ninjaSlider",
+		"/C/Users/NaNotebook-Ida/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/NaNotebook-Ida/Dropbox/Public/cdec/css/ui/dropdown-arrow.svg",
+		"/D/Webs/clientebancario/css/img/ribbon.svg",
+		"/C/Users/NaNotebook-Ida/Dropbox/Public/cdec/css/fonts/stylesheet.css",
+		"/C/Users/NaNotebook-Ida/Dropbox/Public/cdec/imagenes/mapa-sic.png",
+		"/C/Users/NaNotebook-Ida/Dropbox/Public/cdec/js/libs/selectivizr.min",
+		"/C/Users/NANOTE~1/AppData/Local/Temp/Rar$DRa0.246/selectivizr-min.js",
+		"/C/Users/NaNotebook-Ida/Dropbox/Public/cdec/js/libs/modernizr.min.js",
+		"/C/Users/NaNotebook-Ida/Dropbox/Public/cdec/js/script.js",
+		"/D/Webs/clientebancario/index.html",
+		"/D/Webs/Australis-Seafoods/wp-content/themes/australis/meta-header.php",
+		"/D/Webs/EQP/wp-content/themes/eqpmobile/functions.php"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"tests.js",
+			"changeTable",
+			"add-more",
+			"$(this)",
+			"changeTable",
+			"generatePost",
+			"removeDocs",
+			"js.",
+			"$(this)",
+			"verifyDocs",
+			"send_attachment_bkp",
+			"generatePost",
+			"$(this)",
+			"verifyDocs",
+			"$(this)",
+			"removeAttach",
+			"removegroup",
+			"$post->ID",
+			"printme",
+			"dato1",
+			"$attach",
+			"attach",
+			"$docID",
+			"counter",
+			"docs",
+			"echo ",
+			"filename",
+			"taxonomie",
+			"printme",
+			"save-informe",
+			"deployGroup",
+			"add-more",
+			"echo ",
+			"<",
+			"'<t",
+			"tipo",
+			"metas",
+			"aplicacion-informe",
+			"$(this)",
+			"taxonomies",
+			"\">\n",
+			"expanded-template-body",
+			"Modernizr.load",
+			"Mordernizr.load",
+			"mordernizr.load",
+			"src=",
+			"function(){",
+			"día",
+			"dia",
+			"theme",
+			"action-btn small-btn blue-btn hide-on-phones ie-inline-btn",
+			"pagina",
+			"pa",
+			".svg)",
+			".svg",
+			".content-body ",
+			"important-form",
+			"rapid-access-box",
+			"action-btn small-btn blue-btn hide-on-phones",
+			"pretty-select",
+			"consol",
+			"#main-header",
+			"#main-header.",
+			"#main-header",
+			"<form",
+			"regular-form",
+			"form ",
+			"form",
+			"<form",
+			"animate",
+			"alert",
+			"animate",
+			"alert",
+			"next",
+			"begin",
+			"translate(",
+			"translate()",
+			"tanslate()",
+			"30,45,20,11,34, 60,70,32,12,5,80,43",
+			"<img class=\"graphic-table-spark\" src=\"imagenes/sparkline-test.png\">",
+			"graphic-table-spark",
+			".contingencia",
+			".no-svg",
+			".pretty-select",
+			"content-body",
+			".regular-form",
+			"logo",
+			"top-bar",
+			"ececec",
+			"0px",
+			"blue-btn",
+			"postulacion_pretenciones",
+			"postulacion_subject",
+			"contacto",
+			"action-btn",
+			"lightbox",
+			"accordeon",
+			"form",
+			"tablets",
+			"general",
+			"thumbnail",
+			"novedades",
+			"both",
+			"Publicaciones",
+			"publi",
+			"action",
+			"<span class=\"simple permalink\">",
+			"svgFallback",
+			"-form",
+			"form",
+			"action-btn small-btn blue-btn rapid-access",
+			".main-section-title",
+			"fold",
+			"uppercase",
+			"uppercase-text",
+			"banner",
+			"complex-unit",
+			" .",
+			"big-btn",
+			"Ir a Informes y documentos",
+			"Ir a Informes y Documentos",
+			"Ir a Informes y documentos",
+			"Ir a Informes y Documentos",
+			"Ir a Informes y documentos",
+			"Ir a Informes y Documentos",
+			"Ir a Informes y documentos",
+			"Ir a Informes y Documentos",
+			"Ir a Informes y documentos"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"settings":
+					{
+						"buffer_size": 516,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								516,
+								516
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 118.0
+	},
+	"output.jslint_result_view":
+	{
+		"height": 124.0
+	},
+	"output.sftp":
+	{
+		"height": 124.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"stye",
+				"front/css/style.css"
+			],
+			[
+				"style",
+				"css/style.css"
+			],
+			[
+				"sty",
+				"css/style.css"
+			],
+			[
+				"inde",
+				"index.html"
+			],
+			[
+				"",
+				"css/style.css"
+			],
+			[
+				"script",
+				"js/mainScript.js"
+			],
+			[
+				"scrip",
+				"js/script.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 266.0,
+	"status_bar_visible": true
+}
