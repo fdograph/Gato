@@ -68,7 +68,6 @@
                 $allBlocks = $('.block:not(.selected)'),
                 i,
                 $target;
-            log( situation );
             if( situation.status === 'winning' || situation.status === 'loosing' ){
                 for( i = 0; i < situation.comb.length; i++ ){
                     $target = $allBlocks.filter('[data-index="'+ situation.comb[i] +'"]');
@@ -130,16 +129,15 @@
                 $results,
                 i,
                 innerConunt;
-
-            for( i = 0; i < winningConditions; i++ ){
+            for( i = 0; i < winningConditions.length; i++ ){
                 for( innerConunt = 0; innerConunt < winningConditions[i].length; innerConunt++ ){
-                    selectionString.push('.selected[data-index="'+ combs[counter][innerConunt] +'"][data-owner="'+ currentPlayerId +'"]');
+                    selectionString.push('[data-index="'+ winningConditions[i][innerConunt] +'"]');
                 }
                 
                 $results = $( selectionString.join(', ') );
                 selectionString = [];
-
-                if( $results.length === 3 ){ return true; }
+                
+                if( $results.filter('[data-owner="player-'+ currentPlayerId +'"]').length === 3 ){ return true; }
             }
             return false;
         },
