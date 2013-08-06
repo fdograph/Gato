@@ -10,16 +10,16 @@
             type : 'robot',
             score : 0
         };
-        this.settings = $.extend({}, this.defaults, (options ? options : {}));
+        this.settings = $.extend({}, this.defaults, (options || {}));
         this.$playerInfoBox = $('#player-'+ this.settings.id +'-info');
         this.$nameBox = this.$playerInfoBox.find('.player-name');
         this.$typeBox = this.$playerInfoBox.find('.player-type');
         this.$scoreBox = this.$playerInfoBox.find('.player-score');
 
-        this.updateBoard();
+        this.update();
     };
     window.GatoPlayer.prototype = {
-        updateBoard : function(){
+        update : function(){
             var self = this;
             self.$nameBox.text( self.settings.name );
             self.$typeBox.text( self.settings.type );
@@ -27,130 +27,67 @@
         },
         play : function( game ){
             var self = this;
+            self.game = game;
             self.enemy = this.getEnemy( game.players );
-
             self.decideAction( self.getSituation() );
         },
         getSituation : function(){
             var self = this,
-                currentPlayerId = self.settings.id,
-                enemyid = self.enemy.settings.id,
-                i,
-                contra = 1,
-                leftDiagSelector = [],
-                rightDiagSelector = [],
-                tempOwnedLength,
-                $ownedLeftDiag,
-                $ownedRightDiag,
-                $ownedRow,
-                $ownedCol;
+                combs = self.game.winningConditions,
+                winCombsNum = self.game.winningConditions.length,
+                winning = false,
+                loosing = false,
+                $results,
+                selectionString = [],
+                counter,
+                innerConunt,
+                enemyMatch,
+                myMatch;
 
-            for( i = 3; i >= 1; i--, contra++ ){
-                $ownedRow = $('.rowbox[data-row="'+ i +'"] [data-owner]');
-                $ownedCol = $('.block[data-col="'+ i +'"][data-owner]');
-
-                //almost row
-                if( $ownedRow.length === 2 ){
-                    //casi ganando la fila, se devvulve un objeto con la situacion
-                    if( $('.rowbox[data-row="'+ i +'"] [data-owner="player-'+ currentPlayerId +'"]').length === 2 ){
-                        return {
-                            status : 'winning',
-                            type : 'row'
-                        };
-                    }
-                    // casi perdiendo una fila, se devuelve respuesta para poder bloquear
-                    else if( $('.rowbox[data-row="'+ i +'"] [data-owner="player-'+ enemyid +'"]').length === 2 ){
-                        return {
-                            status : 'loosing',
-                            type : 'row'
-                        };
-                    }
-                }
-
-                //almost col
-                else if( $ownedCol.length === 2 ){
-                    //casi ganando la columna, se devvulve un objeto con la situacion
-                    if( $('.block[data-col="'+ i +'"][data-owner="player-'+ currentPlayerId +'"]').length === 2 ){
-                        return {
-                            status : 'winning',
-                            type : 'col'
-                        };
-                    }
-                    // casi perdiendo una columan, se devuelve respuesta para poder bloquear
-                    else if( $('.block[data-col="'+ i +'"][data-owner="player-'+ enemyid +'"]').length === 2 ){
-                        return {
-                            status : 'loosing',
-                            type : 'col'
-                        };
-                    }
-                }
-
-                leftDiagSelector.push('.block[data-col="'+ i +'"][data-row="'+ i +'"]');
-                rightDiagSelector.push('.block[data-col="'+ contra +'"][data-row="'+ i +'"]');
-            }
-
-            //esto no esta funcionando, en caso de diag solo devuelve status neutral.
-            $ownedLeftDiag = $( leftDiagSelector.join(', ') );
-            $ownedRightDiag = $( leftDiagSelector.join(', ') );
-
-            //leftDiag
-            tempOwnedLength = $ownedLeftDiag.filter(function( item ){ return $(item).attr('data-owner'); }).length;
-            if( tempOwnedLength === 2 ){
-                // casi ganando left diag
-                if( $ownedLeftDiag.filter(function( item ){ return $(item).attr('data-owner') === 'player-'+ currentPlayerId; }).length === 2 ){
-                    return {
-                        status : 'winning',
-                        type : 'leftDiag'
-                    };
+            for( counter = 0; counter < winCombsNum; counter++ ){
+                for( innerConunt = 0; innerConunt < combs[counter].length; innerConunt++ ){
+                    selectionString.push('.selected[data-index="'+ combs[counter][innerConunt] +'"]');
                 }
                 
-                // casi perdiendo left diag
-                else if( $ownedLeftDiag.filter(function( item ){ return $(item).attr('data-owner') === 'player-'+ enemyid; }).length === 2 ){
-                    return {
-                        status : 'loosing',
-                        type : 'leftDiag'
-                    };
-                }
+                $results = $( selectionString.join(', ') );
+                myMatch = $results.filter('[data-owner="player-'+ self.settings.id +'"]').length;
+                enemyMatch = $results.filter('[data-owner="player-'+ self.enemy.settings.id +'"]').length;
+                selectionString = [];
+
+                if( myMatch === 2 && enemyMatch === 0 ){ winning = combs[counter]; }
+                else if( enemyMatch === 2 && myMatch === 0 ){ loosing = combs[counter]; }
             }
 
-            //RightDiag
-            tempOwnedLength = $ownedRightDiag.filter(function( item ){ return $(item).attr('data-owner'); }).length;
-            if( tempOwnedLength === 2 ){
-                // casi ganando right diag
-                if( $ownedRightDiag.filter(function( item ){ return $(item).attr('data-owner') === 'player-'+ currentPlayerId; }).length === 2 ){
-                    return {
-                        status : 'winning',
-                        type : 'rightDiag'
-                    };
-                }
-                
-                // casi perdiendo right diag
-                else if( $ownedRightDiag.filter(function( item ){ return $(item).attr('data-owner') === 'player-'+ enemyid; }).length === 2 ){
-                    return {
-                        status : 'loosing',
-                        type : 'rightDiag'
-                    };
-                }
-            }
+            if( winning ){ return { status : 'winning', comb : winning }; }
+            else if( loosing ){ return { status : 'loosing', comb : loosing }; }
 
-            // si no esta ganando ni perdiendo nada se devuelve un estado neutral
             return { status : 'neutral' };
         },
         decideAction : function( situation ){
+            var self = this,
+                $allBlocks = $('.block:not(.selected)'),
+                i,
+                $target;
+            log( situation );
+            if( situation.status === 'winning' || situation.status === 'loosing' ){
+                for( i = 0; i < situation.comb.length; i++ ){
+                    $target = $allBlocks.filter('[data-index="'+ situation.comb[i] +'"]');
+                    if( $target.length ){
+                        return self.makeMove( $target );
+                        break;
+                    }
+                }
+            }
+            else {
+                return self.makeMove( $allBlocks.eq( Math.floor(Math.random() * $allBlocks.length) ) );
+            }
+        },
+        makeMove : function( $block ){
             var self = this;
-
-            log(situation);
-
-            switch( situation.status ){
-                case 'winning' :
-                    // make winning move
-                    break;
-                case 'loosing' : 
-                    // blocking enemy
-                    break;
-                default :
-                    // random play
-                    break;
+            if( ! $block.attr('data-owner') ){
+                $block
+                .addClass('selected player-'+ self.settings.id)
+                .attr('data-owner', 'player-'+ self.settings.id);
             }
         },
         getEnemy : function( players ){
@@ -163,7 +100,11 @@
     // construimos el objeto para el juego
     window.GatoGame = function(){ this.setupGame(); };
     window.GatoGame.prototype = {
-        resetGame : function(){},
+        winningConditions : [[1,2,3], [4,5,6], [7,8,9], [1,4,7], [2,5,8], [3,6,9], [1,5,9], [7,5,3]],
+        resetGame : function(){
+            $('.block').removeAttr('data-owner').removeClass('selected player-1 player-2');
+            this.currentPlayer = this.players[0];
+        },
         setupGame : function(){
             var self = this,
                 newPlayerName = localStorage.getItem('playerName');
@@ -178,33 +119,44 @@
             self.currentPlayer = self.players[0];
 
             $('.block')
-                .each(function(index, elem){ $(elem).attr('data-index', index); })
+                .each(function(index, elem){ $(elem).attr('data-index', index + 1); })
                 .on('mouseup.gato touchend.gato MSPointerUp.gato interaction.gato', { game : self }, this.handleInteraction);
         },
         isWinner : function(){
             var self = this,
                 currentPlayerId = self.currentPlayer.settings.id,
+                winningConditions = self.winningConditions,
+                selectionString = [],
+                $results,
                 i,
-                contra = 1,
-                leftDiagSelector = [],
-                rightDiagSelector = [];
+                innerConunt;
 
-            for( i = 3; i >= 1; i--, contra++ ){
-                if( $('.rowbox[data-row="'+ i +'"] [data-owner="player-'+ currentPlayerId +'"]').length === 3 ){ return true; }
-                else if( $('.block[data-col="'+ i +'"][data-owner="player-'+ currentPlayerId +'"]').length === 3 ){ return true; }
+            for( i = 0; i < winningConditions; i++ ){
+                for( innerConunt = 0; innerConunt < winningConditions[i].length; innerConunt++ ){
+                    selectionString.push('.selected[data-index="'+ combs[counter][innerConunt] +'"][data-owner="'+ currentPlayerId +'"]');
+                }
+                
+                $results = $( selectionString.join(', ') );
+                selectionString = [];
 
-                leftDiagSelector.push('.block[data-col="'+ i +'"][data-row="'+ i +'"][data-owner="player-'+ currentPlayerId +'"]');
-                rightDiagSelector.push('.block[data-col="'+ contra +'"][data-row="'+ i +'"][data-owner="player-'+ currentPlayerId +'"]');
+                if( $results.length === 3 ){ return true; }
             }
-            return $( leftDiagSelector.join(', ') ).length === 3 || $( rightDiagSelector.join(', ') ).length === 3;
+            return false;
+        },
+        isDraw : function(){
+            return $('.block').length === $('.block.selected').length;
         },
         winGame : function(){
             alert('winner player '+ this.currentPlayer.settings.name);
+            this.currentPlayer.settings.score += 1;
+            this.currentPlayer.update();
+            this.resetGame();
         },
         endTurn : function(){
             var self = this;
 
             if( self.isWinner() ){ return self.winGame(); }
+            else if( self.isDraw() ){ return self.resetGame(); }
 
             self.currentPlayer = self.currentPlayer.settings.id === 1 ? self.players[1] : self.players[0];
 
@@ -220,7 +172,7 @@
                 $block = $(this),
                 hasOwner = $block.attr('data-owner');
 
-            if( ! $block.attr('data-owner') ){
+            if( ! hasOwner ){
                 $block
                     .addClass('selected player-'+ game.currentPlayer.settings.id)
                     .attr('data-owner', 'player-'+ game.currentPlayer.settings.id);
